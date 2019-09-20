@@ -1,3 +1,8 @@
+body {
+  background:#909090;
+  font-family: sans-serif;
+}
+
 .keyboard {
     position: fixed;
     left: 0;
