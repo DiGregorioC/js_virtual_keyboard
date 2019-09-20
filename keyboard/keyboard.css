@@ -28,4 +28,46 @@
   border: none;
   background: rgba(255, 255, 255, 0.2)
   color: #ffffff;
+  font-size: 1.05rem;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+.keyboard--key:active {
+  background: rgba(255, 255, 255, 0.12)
+}
+
+.keyboard--key--wide {
+  width: 12%;
+}
+
+.keyboard--key--extrawide {
+  width: 35%;
+  max-width: 500px;
+}
+
+.keyboard--key--activateable::after {
+  content: '';
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+.keyboard--key--active::after {
+  background: #08FF00;
+}
+
+.keyboard--key--dark {
+  background: rgba(0,0,0,0.15)
 }
